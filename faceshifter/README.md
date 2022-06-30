@@ -53,6 +53,7 @@ You can train the model
 * set parameters of "dataset_path" in section [train]
 * run `python train.py`
 * You can modify parameters of BatchSize, epoch, learning rate in train.py
+
 __NOTICE__: There are some specific requirements about dataset, and I would show you later.
 
 ### faceshifter_server
