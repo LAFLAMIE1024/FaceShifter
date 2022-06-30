@@ -21,7 +21,12 @@ You can install these packages by pip
 pip install -r requirements.txt
 ```
 
-If you want to train the model, you have to install apex, you can download and install from the [Nvidia/apex](https://github.com/NVIDIA/apex)
+If you want to train the model, you have to install apex: (In my case, I run this code on colab, you might need to change this code to your own path):
+```python
+!git clone https://github.com/NVIDIA/apex.git
+%cd /content/apex
+!pip install -v --no-cache-dir ./
+```
 REMEMBER: Before you install apex, you have to make sure that your computer or the cloud PC has NVIDIA GPU, otherwise, there will be an error!
 
 ## How to use FaceShifter
