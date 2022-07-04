@@ -118,7 +118,8 @@ class Backbone(Module):
             unit_module = bottleneck_IR_SE
         self.input_layer = Sequential(Conv2d(3, 64, (3, 3), 1, 1 ,bias=False), 
                                       BatchNorm2d(64), 
-                                      ReLU(64))
+                                      PReLU(64))
+                                      #ReLU(64))
         self.output_layer = Sequential(BatchNorm2d(512), 
                                        Dropout(drop_ratio),
                                        Flatten(),
