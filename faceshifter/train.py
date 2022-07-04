@@ -23,7 +23,8 @@ max_epoch = 2000
 show_step = 10
 save_epoch = 1
 model_save_path = './saved_models/'
-optim_level = 'O1'
+# optim_level = 'O1'
+optim_level = 'O0'
 
 fine_tune_with_identity = False
 
