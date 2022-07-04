@@ -93,6 +93,7 @@ for epoch in range(0, max_epoch):
         Xs, Xt, same_person = data
         Xs = Xs.to(device)
         Xt = Xt.to(device)
+        print(Xs.dtype)
         # embed = embed.to(device)
         with torch.no_grad():
             embed = arcface(F.interpolate(Xs[:, :, 19:237, 19:237], [112, 112], mode='bilinear', align_corners=True))
